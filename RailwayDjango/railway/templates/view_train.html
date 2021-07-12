@@ -1,0 +1,21 @@
+
+{% extends 'navigation3.html' %}
+{% load static %}
+{% block b %}
+<style>
+    input[type=text][type=password]{
+    border-radius:8px;
+    width:600px;
+    height:16px;
+    }
+</style>
+{% if error2 %}
+<script>
+alert('Record  Deleted Successfully')
+window.location({% url 'view_train' %})
+</script>
+{%  endif %}
+
+
+
+{% endblock %}
